@@ -11,7 +11,5 @@ public class Box<B extends Fruit> {
         this.element = element;
     }
 
-    public Box() {
 
-    }
 }
