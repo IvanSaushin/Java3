@@ -2,49 +2,21 @@ package Generics.task3;
 
 import java.util.ArrayList;
 public class Fruit {
-    private ArrayList fruit;
     private float weightFruit;
-    private String name;
 
-    public Fruit(ArrayList fruit) {
-        this.fruit = fruit;
-    }
-
-    public String getName() {
-        return name;
+    public Fruit(float weightFruit) {
+        this.weightFruit = weightFruit;
     }
 
-    public ArrayList getFruit() {
-        return fruit;
-    }
-    public void setFruit(ArrayList fruit) {
-        this.fruit = fruit;
+    public float getWeightFruit() {
+        return weightFruit;
     }
 
-    public void boxInfo() {
-        System.out.println("Содержимое коробки " + getName());
-        System.out.println("всего " + fruit.size() + " фрукт/a/ов");
-        System.out.println("Вес каждого: ");
-        for (int i = 0; i < fruit.size(); i++) {
-            if (i < fruit.size() && i != fruit.size()-1) {
-                System.out.println(fruit.get(i));
-            }
-            if (i == fruit.size()-1) {
-                System.out.println(fruit.get(i) + "  <- the last");
-            }
-        }
-        System.out.println();
-    }
+    /* вопрос 1
+    public abstract Fruit newInstance();
 
-    public int getQuantityFruit() {
-        return fruit.size();
-    }
+     - было в решении по домашнему заданию, но не совсем
+     понял - зачем. у себя это не использовал и всё работает.
 
-    public float getWeightBox() {
-        float sum =0;
-        for (int i=0; i<getFruit().size(); i++) {
-            sum = sum + (Float) getFruit().get(i);
-        }
-        return sum;
-    }
+     */
 }
