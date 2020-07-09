@@ -2,17 +2,21 @@ package Generics.task3;
 
 import java.util.ArrayList;
 public class Fruit {
-    private ArrayList fruit;
+    private float weightFruit;
 
-    public Fruit(ArrayList fruit) {
-        this.fruit = fruit;
+    public Fruit(float weightFruit) {
+        this.weightFruit = weightFruit;
     }
 
-    public ArrayList getFruit() {
-        return fruit;
+    public float getWeightFruit() {
+        return weightFruit;
     }
 
-    public void addFruit() {
-        fruit.add(1);
-    }
+    /* вопрос 1
+    public abstract Fruit newInstance();
+
+     - было в решении по домашнему заданию, но не совсем
+     понял - зачем. у себя это не использовал и всё работает.
+
+     */
 }
